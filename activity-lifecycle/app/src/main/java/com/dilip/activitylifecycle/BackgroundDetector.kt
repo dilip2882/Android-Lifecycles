@@ -17,7 +17,7 @@ class BackgroundDetector {
         startedActivitiesNum++
         if (startedActivitiesNum == 1) {
             Timber.i("application is in foreground")
-            listeners.map {  it.onForeground() }
+            listeners.map { it.onForeground() }
         }
     }
 
@@ -25,7 +25,7 @@ class BackgroundDetector {
         startedActivitiesNum--
         if (startedActivitiesNum == 0) {
             Timber.i("application is in background")
-            listeners.map {  it.onBackground() }
+            listeners.map { it.onBackground() }
 
         }
     }

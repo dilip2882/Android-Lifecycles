@@ -19,7 +19,7 @@ class CustomApplication : Application() {
     }
 }
 
-class MyAppLifecycleObserver: DefaultLifecycleObserver {
+class MyAppLifecycleObserver : DefaultLifecycleObserver {
 
     override fun onStart(owner: LifecycleOwner) {
         super.onStart(owner)

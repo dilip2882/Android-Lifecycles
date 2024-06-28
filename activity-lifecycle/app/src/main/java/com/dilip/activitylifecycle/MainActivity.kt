@@ -1,8 +1,6 @@
 package com.dilip.activitylifecycle
 
 import android.app.Application
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -62,14 +60,6 @@ class MainActivity : AppCompatActivity() {
     override fun onTopResumedActivityChanged(isTopResumedActivity: Boolean) {
         super.onTopResumedActivityChanged(isTopResumedActivity)
         Timber.i("onTopResumedActivityChanged(); isTopResumed: $isTopResumedActivity")
-    }
-
-    companion object {
-        @JvmStatic
-        fun start(context: Context) {
-            val intent = Intent(context, TransparentActivity::class.java)
-            context.startActivity(intent)
-        }
     }
 
 }

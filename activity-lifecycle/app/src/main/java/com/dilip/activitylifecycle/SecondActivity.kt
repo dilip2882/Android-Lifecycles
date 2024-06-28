@@ -12,7 +12,6 @@ import com.dilip.androidlifecycles.R
 import timber.log.Timber
 
 
-
 class SecondActivity : AppCompatActivity(), BackgroundDetector.Listener {
 
     private lateinit var backgroundDetector: BackgroundDetector
