@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="40dp"
+        android:paddingHorizontal="50dp">
+
+        <TextView
+            android:id="@+id/txtScreenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnNextActivity"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:layout_marginBottom="20dp"
+            style="@style/TextViewScreenName"
+            android:text="Main Activity"
+            />
+
+        <Button
+            android:id="@+id/btnNextActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtScreenName"
+            app:layout_constraintBottom_toTopOf="@id/btnFragmentActivity"
+            android:layout_marginBottom="20dp"
+            android:text="Next Activity"
+            />
+
+        <Button
+            android:id="@+id/btnFragmentActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnNextActivity"
+            app:layout_constraintBottom_toTopOf="@id/btnConfigChangeActivity"
+            android:layout_marginBottom="20dp"
+            android:text="Fragment Activity"
+            />
+
+        <Button
+            android:id="@+id/btnConfigChangeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnFragmentActivity"
+            app:layout_constraintBottom_toTopOf="@id/btnManualConfigChangeActivity"
+            android:layout_marginBottom="20dp"
+            android:text="Config Change Activity"
+            />
+
+        <Button
+            android:id="@+id/btnManualConfigChangeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnConfigChangeActivity"
+            app:layout_constraintBottom_toTopOf="@id/btnViewModelActivity"
+            android:layout_marginBottom="20dp"
+            android:text="Manual Config Change Activity"
+            />
+
+        <Button
+            android:id="@+id/btnViewModelActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnManualConfigChangeActivity"
+            app:layout_constraintBottom_toTopOf="@id/btnSaveAndRestoreActivity"
+            android:layout_marginBottom="20dp"
+            android:text="ViewModel Activity"
+            />
+
+        <Button
+            android:id="@+id/btnSaveAndRestoreActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnViewModelActivity"
+            app:layout_constraintBottom_toTopOf="@id/btnServiceActivity"
+            android:layout_marginBottom="20dp"
+            android:text="Save &amp; Restore Activity"
+            />
+
+        <Button
+            android:id="@+id/btnServiceActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSaveAndRestoreActivity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="20dp"
+            android:text="Service Activity"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
